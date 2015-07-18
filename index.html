@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Introduction</title>
+	<style>
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			font-family: "Microsoft YaHei","Hiragino Sans GB",sans-serif;
+			font-size: 16px;
+			color: #000;
+		}
+		html,body{
+			height: 100%;
+			overflow: hidden;
+		}
+		h1{
+			font-size: 3em;
+			font-weight: normal;
+		}
+		p{
+			font-size: 2em;
+			margin:0.5em 0 2em 0;
+		}
+		#container,.section{
+			height: 100%;
+			position: relative;
+		}
+		#section0,
+		#section1,
+		#section2,
+		#section3{
+			background-color: #000;
+			background-size: cover;
+			background-position: 50% 50%;
+			text-shadow:1px 1px 1px #333;
+			background-image: url("background.jpg");
+			opacity: 0.8;
+		}
+		/*#section0{
+			background-image: url(images/1.jpg);
+			color: #fff;
+			
+		}
+		#section1{
+			color: #fff;
+			text-shadow:1px 1px 1px #333;
+			background-image: url(images/2.jpg);
+		}
+		#section2{
+			background-image: url(images/3.jpg);
+			color: #fff;
+			text-shadow:1px 1px 1px #666;
+		}
+		#section3{
+			color: #008283;
+			background-image: url(images/4.jpg);
+			text-shadow:1px 1px 1px #fff;
+		}*/
+		#section0 p{
+			color: #F1FF00;
+		}
+		#section3 p{
+			color: #00A3AF;
+		}
+		.left{
+			float: left;
+		}
+		.start {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			text-align: center;
+			line-height: 150px;
+			font-size: 2em;
+			border: 2px solid #fff;
+			margin: 200px auto;
+			background-color: #999;
+			opacity: 0.0;
+			transform: scale(0.3);
+		}
+		.start:hover {
+			opacity: 0.8;
+			cursor:  pointer;
+		}
+		.intro {
+			position: absolute;
+			top: 45%;
+			width: 90%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			text-align: center;
+			border: 1px solid #000;
+			color: #333;
+			background-color: rgba(255, 255, 255, 0.5);
+			padding: 50px 5% 0 5%;
+		}
+		.intro p {
+			text-indent: 2em;
+		}
+		.intro .member {
+			width: 30%;
+			margin-left: 2.5%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			float: left;
+			text-align: center;
+		}
+		.member .member-favicon {
+			width: 180px;
+			height: 180px;
+			border-radius: 50% 50% 50% 0%;
+			border: 1px solid #000;
+			float: left;
+		}
+		.member .favicon1 {
+			background-color: #fff;
+			background-image: url("member1.jpg");
+			background-size: cover;
+		}
+		.member .favicon2 {
+			background-color: #fff;
+			background-image: url("member2.jpg");
+			background-size: cover;
+		}
+		.member .favicon3 {
+			background-color: #fff;
+			background-image: url("member3.jpg");
+			background-size: cover;
+		}
+		.member .favicon4 {
+			background-color: #fff;
+			background-image: url("member4.jpg");
+			background-size: cover;
+		}
+		.member .favicon5 {
+			background-color: #fff;
+			background-image: url("member5.jpg");
+			background-size: cover;
+		}
+		.member .favicon6 {
+			background-color: #fff;
+			background-image: url("member6.jpg");
+			background-size: cover;
+		}
+		.member .member-intro {
+			float: left;
+			width: 150px;
+			height: 150px;
+			margin-left: 10px;
+		}
+		.member-intro .intro-name {
+			color: #0088A8;
+			margin-top: 15px;
+		}
+		.member-intro .intro-detail {
+			text-align: center;
+			margin-top: 15px;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="section left" id="section0">
+			<div class="start">IFELSE</div>
+		</div>
+		<div class="section left" id="section1">
+			<div class="intro">
+				<h1 class="title">&lt;IFELSE&gt;团队愿景&lt;/IFELSE&gt;</h1>
+				<p>他们当中有在校的学生也有已经工作的哥哥,然而这并不是亮点.队伍里的小伙伴大多刚刚接触前端,木有基础什么都不懂有木有!
+					虽然我们都是小白,虽然我们很菜,但有一颗绝不放弃,坚持到底的心!
+					加油IFESLE!
+				</p>
+			</div>
+		</div>
+		<div class="section left" id="section2">
+			<div class="intro">
+				<div class="member" id="member1">
+					<div class="member-favicon favicon1" ></div>
+					<div class="member-intro">
+						<div class="intro-name">Zz</div>
+						<div class="intro-detail">坐标大庆,HTML、CSS、JS不玩心</div>
+					</div>
+				</div>
+				<div class="member" id="member2">
+					<div class="member-favicon favicon2" ></div>
+					<div class="member-intro">
+						<div class="intro-name">Mileber</div>
+						<div class="intro-detail">坐标上海,热爱新的事物和美好的东西</div>
+					</div>
+				</div>
+				<div class="member" id="member3">
+					<div class="member-favicon favicon3" ></div>
+					<div class="member-intro">
+						<div class="intro-name">胡红青</div>
+						<div class="intro-detail">坐标九江,探索,学习,创造</div>
+					</div>
+				</div>
+				<div class="member" id="member4">
+					<div class="member-favicon favicon4" ></div>
+					<div class="member-intro">
+						<div class="intro-name">Crossing</div>
+						<div class="intro-detail">坐标杭州,正努力踏上前端的深渊</div>
+					</div>
+				</div>
+				<div class="member" id="member5">
+					<div class="member-favicon favicon5" ></div>
+					<div class="member-intro">
+						<div class="intro-name">编译青春</div>
+						<div class="intro-detail">不断前进的前端渣渣~</div>
+					</div>
+				</div>
+				<div class="member" id="member6">
+					<div class="member-favicon favicon6" ></div>
+					<div class="member-intro">
+						<div class="intro-name">尹吉凯</div>
+						<div class="intro-detail">坐标济南,这个夏天不留遗憾</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="jquery-1.11.3.min.js"></script>
+	<script src="pageswitch.js"></script>
+	<script src="jquery.transit.js"></script>
+	<script>
+	$(function(){
+
+		$(".start").transition({
+			opacity: 0.8, 
+			scale: 1.0, 
+			duration: 500, 
+			easing: "linear", 
+			complete: function() {
+				$(".start").click(function() {
+					_start();
+				});
+			} 
+		});	
+
+		$("#container").switchPage({
+			"loop" : true,
+			"keyboard" : true,
+			"direction" : "horizontal"
+		});
+
+		function _start() {
+			$(".start").transition({
+				opacity: 0.3,
+				scale: 0.3,
+				duration: 500,
+				easing: "linear",
+				complete :function() {
+					$(".start").transition({
+						opacity: 0.8,
+						scale: 1,
+						duration: 500,
+						easing: "linear",
+						complete: function() {
+							//$(".start").css("hidden", "hidden");
+						}
+					});
+				}
+			});
+		};
+
+		
+		
+	});
+	</script>
+</body>
+</html>
